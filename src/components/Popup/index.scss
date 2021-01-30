@@ -1,0 +1,263 @@
+@import "../../variables.scss";
+.from {
+	color: grey;
+}
+.back {
+	margin-right: 20px !important;
+}
+.line {
+	border-bottom: 1px solid grey;
+	width: 10%;
+	height: 27px;
+}
+.popup-scroll-area {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	opacity: 0;
+	pointer-events: none;
+	// z-index: 999999999;
+	z-index: 999;
+	.gray-clr {
+		background-color: #ccc !important;
+		pointer-events: none !important;
+	}
+	.blue-clr {
+		background-color: #0092d0 !important;
+	}
+	.popup {
+		position: absolute;
+		background-color: white;
+		left: 50%;
+		top: 140px;
+		width: 700px;
+		transform: translateX(-50%);
+		text-align: center;
+		margin-bottom: 140px;
+		.content {
+			padding: 40px;
+		}
+		.tab {
+			background-color: #f5f5f5;
+			color: grey;
+			width: 53px;
+			height: 53px;
+			border-radius: 50%;
+			&.flex {
+				margin-right: 0px;
+			}
+			&.active {
+				background-color: #0092d0;
+				color: white;
+			}
+		}
+		.close {
+			display: block;
+			background-image: url("../../assets/close.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 20px;
+			position: absolute;
+			left: 100%;
+			bottom: 100%;
+			transform: translate(-50%, 50%);
+			border: none;
+			background-color: $secondary-color;
+			height: 34px;
+			width: 34px;
+			border-radius: 50%;
+			border: 1px solid #fff;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+
+		h1 {
+			margin: 0;
+			background: grey;
+			padding: 20px 0;
+			line-height: 1;
+			font-size: 28px;
+			font-weight: 500;
+			background: #f8fafb;
+		}
+		.verify-email-phone-code {
+			p {
+				margin: 0;
+			}
+			.content {
+				padding: 40px 60px;
+				.code-box {
+					margin: 40px 0;
+					color: $grey-color;
+					span {
+						color: $red-color;
+					}
+					.code {
+						margin-left: 15px;
+					}
+				}
+				.status {
+					font-size: 16px;
+					margin: 20px 0 20px;
+					font-weight: 500;
+					.time {
+						color: $red-color;
+					}
+					&.resend {
+						color: $secondary-color;
+						text-decoration: underline;
+						cursor: pointer;
+						&:hover {
+							opacity: 0.8;
+						}
+					}
+				}
+				.error-code {
+					color: red;
+					font-size: 16px;
+					margin-top: 10px;
+					margin-bottom: -10px;
+				}
+			}
+			&.email {
+				.phone {
+					display: none;
+				}
+			}
+			&.phone {
+				.email {
+					display: none;
+				}
+			}
+		}
+		.cta {
+			text-align: center;
+		}
+	}
+	.popup-certificate {
+		width: 800px;
+		border: 1px solid rgba(128, 128, 128, 0.3);
+	}
+	.popup-addWorkExperience,
+	.popup-addOtherExperience,
+	.popup-addEducation,
+	.popup-addCertificate,
+	.popup-addEduOtherExperience {
+		padding: 40px;
+		text-align: left;
+		width: 800px;
+		h1 {
+			padding: 0;
+			margin-bottom: 40px;
+			background-color: white;
+		}
+	}
+	.popup-choosePrivateQuestions,
+	.popup-createNewQuestion {
+		width: 730px;
+	}
+	.popup-questionsLibrary {
+		width: 860px;
+	}
+	.popup-suspendJobPost {
+		width: 770px;
+	}
+
+	.popup-createEmailTemplate,
+	.popup-shareJobPost {
+		width: 900px;
+	}
+	.popup-choosePrivateQuestions,
+	.popup-choosePublicQuestions {
+		width: 900px;
+		h1 {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px 30px;
+		}
+	}
+	.popup-addNewQuestion {
+		width: 730px;
+	}
+	.popup-recruitmentFunnelList {
+		right: 0;
+		left: auto;
+		transform: initial;
+		top: 0;
+		bottom: 0;
+		// height: 100vh !important;
+		width: 400px;
+		.close {
+			display: none !important;
+		}
+	}
+	&.active {
+		pointer-events: all;
+		opacity: 1;
+		.popup {
+			height: fit-content;
+		}
+		.close {
+			display: block;
+		}
+	}
+}
+.ui.fluid.dropdown {
+	margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	.popup-scroll-area {
+		.custom-scrollbar {
+			height: 100vh !important;
+			& > div {
+				height: 100%;
+			}
+		}
+		.popup {
+			width: calc(100% - 80px) !important;
+			top: 70px;
+			&.popup-addWorkExperience,
+			&.popup-addOtherExperience,
+			&.popup-addEducation,
+			&.popup-addCertificate,
+			&.popup-addEduOtherExperience {
+				padding: 20px;
+				width: 100% !important;
+				.close {
+					display: none;
+				}
+			}
+			.verify-email-phone-code {
+				.content {
+					.code-box {
+						.code {
+							margin-left: 0;
+						}
+					}
+				}
+			}
+		}
+		.content {
+			padding: 20px !important;
+			.code-box {
+				display: block;
+			}
+		}
+	}
+	.popup-scroll-area .popup h1 {
+		font-size: 24px;
+		color: #0091d0;
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.popup-scroll-area .popup h1 {
+		font-size: 24px;
+		color: #0091d0;
+	}
+}

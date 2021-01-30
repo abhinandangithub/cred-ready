@@ -1,0 +1,39 @@
+@import "../../../../variables.scss";
+
+.choose-public-question {
+	.content {
+		padding: 30px 30px 30px;
+		.search-panel {
+			input {
+				width: 50%;
+			}
+		}
+		.cta {
+			display: flex;
+			margin-top: 30px;
+			justify-content: flex-end;
+		}
+	}
+	.action-btn {
+		position: absolute;
+		color: #bcd1e4;
+		top: 24px;
+		right: 20px;
+		font-size: 14px;
+		cursor: pointer;
+		&.edit {
+			right: 50px;
+			color: rgba(0,0,0,.4);
+		}
+	}
+	.options {
+		& + input + label {
+			position: absolute;
+			color: #bcd1e4;
+			top: 21px;
+			right: -9px;
+			font-size: 14px;
+			cursor: pointer;
+		}
+	}
+}

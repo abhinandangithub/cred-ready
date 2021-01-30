@@ -1,0 +1,34 @@
+.add-new-question {
+	.content {
+		padding: 40px;
+		background: white;
+		display: flex;
+		justify-content: space-between;
+		.option {
+			flex: 1 1;
+			&:first-child {
+				margin-right: 40px;
+			}
+			.highlight {
+				border: 1px solid #bcd1e4;
+				padding: 40px;
+				cursor: pointer;
+				img {
+					height: 60px;
+				}
+				p {
+					margin-bottom: 0;
+					line-height: 1;
+				}
+				&:hover {
+					background: rgba(245, 245, 245, 0.267);
+				}
+			}
+			.text {
+				margin-bottom: 0;
+				font-size: 15px;
+				text-align: left;
+			}
+		}
+	}
+}

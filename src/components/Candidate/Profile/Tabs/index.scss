@@ -1,0 +1,23 @@
+.tabs {
+	justify-content: space-between;
+	margin-bottom: 30px;
+	li {
+		display: inline-block;
+		a {
+			flex-direction: column;
+			color: #8492a2;
+			font-size: 14px;
+			img {
+				height: 30px;
+				margin-bottom: 7px;
+			}
+			svg {
+				margin-bottom: 10px;
+				font-size: 22px;
+			}
+			&.active {
+				color: #0092d0;
+			}
+		}
+	}
+}

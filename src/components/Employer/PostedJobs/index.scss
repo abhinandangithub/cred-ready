@@ -1,0 +1,240 @@
+.posted-jobs-page {
+	.common-heading-button {
+		.btn {
+			background-image: none;
+			display: flex;
+			padding: 10px 20px;
+			span {
+				position: relative;
+				width: 20px;
+				height: 20px;
+				border-radius: 40px;
+				border: 2px solid white;
+				display: block;
+				margin-right: 10px;
+				&:before,
+				&:after {
+					content: "";
+					position: absolute;
+					background: white;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+				}
+				&:before {
+					width: 2px;
+					height: 8px;
+				}
+				&:after {
+					width: 8px;
+					height: 2px;
+				}
+			}
+		}
+	}
+	.listings {
+		.heading-parent {
+			display: flex;
+			.upload-btn {
+				height: 68%;
+				border-radius: 40px;
+				padding: 0 23px;
+				border: none;
+				font-size: 11px;
+				margin-top: 3px;
+				margin-left: 10px;
+				background: white;
+				border: 1px solid #e1eaf1;
+				&:hover {
+					background-color: #e1eaf1;
+				}
+			}
+		}
+		.suspend {
+			background: #739bbf1a;
+			box-shadow: none;
+			* {
+				pointer-events: none;
+			}
+			.edit_section {
+				opacity: 1;
+			}
+			.primary-btn {
+				opacity: 0.8;
+			}
+			.action-btn {
+				opacity: 0.6;
+			}
+		}
+		& > ul {
+			& > li {
+				box-shadow: 0 2px 30px 1px rgba(176, 192, 237, 0.45);
+				background: white;
+				padding: 20px;
+				display: block;
+				margin-bottom: 30px;
+				position: relative;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				.description {
+					* {
+						margin: 0 0 10px 0;
+					}
+					ul,
+					ol {
+						padding-left: 40px;
+					}
+				}
+				.heading {
+					margin: 0 0 10px 0;
+					font-weight: 500;
+					font-size: 24px;
+					display: flex;
+					align-items: center;
+					.suspend_title {
+						background: #739bbf;
+						border-radius: 35px;
+						font-size: 12px;
+						font-weight: 400;
+						color: white;
+						padding: 4px 10px;
+						margin-left: 10px;
+					}
+				}
+				p {
+					color: #6b6c6f;
+					span {
+						font-weight: 500;
+						color: black;
+					}
+					&.job-openings {
+						margin-top: 0;
+						margin-bottom: 5px;
+					}
+				}
+				.common-skills-list {
+					margin: 20px 0 5px;
+				}
+				.list-btn {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					margin-bottom: 30px;
+					ul {
+						flex: 1;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						margin-right: 30px;
+						list-style: none;
+						li {
+							svg {
+								margin-right: 10px;
+								color: rgb(190, 190, 190);
+							}
+						}
+					}
+				}
+				.checkboxes {
+					text-align: right;
+					display: flex;
+					justify-content: flex-end;
+					label {
+						margin-left: 60px;
+					}
+				}
+				.edit_section {
+					position: relative;
+					position: absolute;
+					right: 30px;
+					top: 30px;
+					cursor: pointer;
+					.action-btn {
+						&.edit {
+							cursor: pointer;
+							color: #0092d0;
+							font-size: 25px;
+							&:hover {
+								opacity: 0.8;
+							}
+						}
+					}
+					.panel {
+						display: none;
+						position: absolute;
+						right: 0;
+						border-radius: 15px;
+						width: max-content;
+						border: 2px solid #0092d0;
+						border-radius: 20px;
+						overflow: hidden;
+						z-index: 2;
+						li {
+							&[disabled]{
+								color: #908e8e;
+							}
+							padding: 5px 19px;
+							cursor: pointer;
+							font-size: 15px;
+							background-color: white;
+							// &:first-child {
+							// 	padding-top: 10px;
+							// }
+							// &:last-child {
+							// 	padding-bottom: 10px;
+							// }
+							&:hover {
+								background-color: #eeeeee;
+							}
+						}
+					}
+					&:after {
+						position: absolute;
+						content: "";
+						width: 30px;
+						height: 50px;
+						right: 0;
+						top: 0;
+						z-index: 0;
+						display: none;
+					}
+					&:hover,
+					&:focus {
+						.panel {
+							display: block;
+						}
+						&:after {
+							display: block;
+						}
+					}
+				}
+				.action-btn {
+					&.share {
+						position: absolute;
+						right: 65px;
+						top: 31px;
+						font-size: 23px;
+						cursor: pointer;
+						color: #0092d0;
+						line-height: 1;
+					}
+				}
+			}
+		}
+	}
+	.no-jobs {
+		.content {
+			text-align: center;
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			.common-heading-button {
+				margin: 30px 0;
+				justify-content: center;
+			}
+		}
+	}
+}

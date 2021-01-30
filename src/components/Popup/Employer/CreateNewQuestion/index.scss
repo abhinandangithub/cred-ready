@@ -1,0 +1,126 @@
+@import "../../../../variables.scss";
+
+.create-new-question {
+	.content {
+		padding: 30px 30px 30px;
+		& > .description {
+			text-align: left;
+			margin: -30px 0 20px 0;
+			padding-bottom: 10px;
+			border-bottom: 1px solid whitesmoke;
+		}
+		ul {
+			li {
+				list-style: none;
+				margin-bottom: 20px;
+				position: relative;
+				label,
+				h3 {
+					display: block;
+					text-align: left;
+					margin-bottom: 10px;
+					font-weight: normal;
+					font-size: 18px;
+				}
+				input {
+					width: 100%;
+					border: 1px solid #bcd1e4;
+					padding: 10px;
+					font-size: 16px;
+				}
+				ul {
+					// border: 1px solid #bcd1e4;
+					font-size: 16px;
+					// padding: 20px;
+					counter-reset: answer;
+					li {
+						margin-bottom: 15px;
+						width: calc(100% - 150px);
+						display: flex;
+						align-items: center;
+						input {
+							margin-left: 15px;
+						}
+						&:last-child {
+							margin-bottom: 0;
+						}
+						&:before {
+							counter-increment: answer;
+							content: counter(answer) ". ";
+						}
+						.delete {
+							width: 30px;
+							height: 30px;
+							display: block;
+							margin-left: 10px;
+							border: navajowhite;
+							background-image: url("../../../../assets/delete-btn.png");
+							background-repeat: no-repeat;
+							background-position: center;
+							background-color: transparent;
+							user-select: none;
+						}
+					}
+				}
+				textarea {
+					border: 1px solid #bcd1e4;
+					width: 100%;
+					font-size: 16px;
+					height: 160px;
+					color: #526677;
+					padding: 15px;
+				}
+				.answer-block {
+					display: flex;
+					margin-bottom: 10px;
+					align-items: center;
+					justify-content: space-between;
+					.answer-type {
+						display: flex;
+						align-items: center;
+						input {
+							display: none;
+						}
+						label {
+							margin-left: 20px;
+							margin-right: 0;
+							margin-bottom: 0;
+							display: flex;
+						}
+					}
+				}
+				.add {
+					position: absolute;
+					right: -3px;
+					top: 60px;
+					color: #0092d0;
+					background: transparent;
+					border: none;
+					font-size: 18px;
+					background-image: url("../../../../assets/add-btn.jpg");
+					background-repeat: no-repeat;
+					background-position: left 0px;
+					background-color: transparent;
+					padding-left: 25px;
+				}
+			}
+		}
+		.cta {
+			display: flex;
+			justify-content: flex-end;
+		}
+		::-webkit-input-placeholder {
+			/* Edge */
+			color: #ccc;
+		}
+
+		:-ms-input-placeholder {
+			/* Internet Explorer 10-11 */
+			color: #ccc;
+		}
+
+		::placeholder {
+			color: #ccc;
+		}
+	}
+}

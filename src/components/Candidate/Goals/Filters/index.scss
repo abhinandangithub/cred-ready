@@ -1,0 +1,149 @@
+.filters {
+	background-color: white;
+	input {
+		margin-bottom: 20px;
+	}
+	& > ul {
+		& > li {
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&:nth-child(1) {
+				.top_1 {
+					background-image: url("../../../../assets/img_building.jpg");
+				}
+			}
+			&:nth-child(2) {
+				.top_1 {
+					background-image: url("../../../../assets/img_computers.jpg");
+				}
+			}
+			&:nth-child(3) {
+				.top_1 {
+					background-image: url("../../../../assets/img_food.jpg");
+				}
+			}
+			&:nth-child(4) {
+				.top_1 {
+					background-image: url("../../../../assets/img_healthcare.jpg");
+				}
+			}
+			&:nth-child(5) {
+				.top_1 {
+					background-image: url("../../../../assets/img_helping.jpg");
+				}
+			}
+			&:nth-child(6) {
+				.top_1 {
+					background-image: url("../../../../assets/img_law.jpg");
+				}
+			}
+			&:nth-child(7) {
+				.top_1 {
+					background-image: url("../../../../assets/img_managing.jpg");
+				}
+			}
+			&:nth-child(8) {
+				.top_1 {
+					background-image: url("../../../../assets/img_maths.jpg");
+				}
+			}
+			&:nth-child(9) {
+				.top_1 {
+					background-image: url("../../../../assets/img_music.jpg");
+				}
+			}
+			&:nth-child(10) {
+				.top_1 {
+					background-image: url("../../../../assets/img_nature.jpg");
+				}
+			}
+			&:nth-child(11) {
+				.top_1 {
+					background-image: url("../../../../assets/img_reading.jpg");
+				}
+			}
+			&:nth-child(12) {
+				.top_1 {
+					background-image: url("../../../../assets/img_science.jpg");
+				}
+			}
+			&:nth-child(13) {
+				.top_1 {
+					background-image: url("../../../../assets/img_social.jpg");
+				}
+			}
+			&:nth-child(14) {
+				.top_1 {
+					background-image: url("../../../../assets/img_sports.jpg");
+				}
+			}
+			&:nth-child(15) {
+				.top_1 {
+					background-image: url("../../../../assets/img_teaching.jpg");
+				}
+			}
+			&:nth-child(16) {
+				.top_1 {
+					background-image: url("../../../../assets/img_transportation.jpg");
+				}
+			}
+		}
+	}
+	ul {
+		padding: 0;
+		list-style: none;
+
+		li {
+			margin-bottom: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			.top_1 {
+				background-repeat: no-repeat;
+				background-position: 10px center;
+				background-size: auto 21px;
+				padding: 10px 10px 10px 50px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				position: relative;
+				&.active {
+					background-color: #f8fafb;
+					& + ul {
+						display: block;
+					}
+				}
+				&:hover {
+					background-color: #f8fafb;
+				}
+			}
+			ul {
+				display: none;
+				overflow: hidden;
+				transition: 0.3s ease;
+				.top_2 {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					&.active {
+						.common-check-icon {
+							display: block;
+						}
+					}
+					background-image: none;
+					padding: 10px 10px 10px 50px;
+					.common-check-icon {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.cta {
+		display: flex;
+		justify-content: space-between;
+		button {
+			width: calc(50% - 10px);
+		}
+	}
+}

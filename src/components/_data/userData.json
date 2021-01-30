@@ -1,0 +1,322 @@
+{
+  "goals": {
+    "current": [
+      {
+        "id": 1,
+        "logo": "Logo path",
+        "heading": "Certified Nursing Assistant",
+        "subHeading": "Patient Care",
+        "crIndex": 82,
+        "description": "Cartified Nursing Assistant (CNA) provide and coordinate patient care, educate patients and the public...",
+        "jobOpenings": 5,
+        "wage": {
+          "start": "32,000",
+          "end": "90,000"
+        },
+        "updates": "200 people subscribed last week"
+      },
+      {
+        "id": 2,
+        "logo": "sdf",
+        "heading": "Certified Nursing Assistant",
+        "subHeading": "Patient Care",
+        "crIndex": 75,
+        "description": "Cartified Nursing Assistant (CNA) provide and coordinate patient care, educate patients and the public...",
+        "jobOpenings": 5,
+        "wage": {
+          "start": "32,000",
+          "end": "90,000"
+        },
+        "updates": "200 people subscribed last week"
+      },
+      {
+        "id": 3,
+        "logo": "sdf",
+        "heading": "Certified Nursing Assistant",
+        "subHeading": "Patient Care",
+        "crIndex": 40,
+        "description": "Cartified Nursing Assistant (CNA) provide and coordinate patient care, educate patients and the public...",
+        "jobOpenings": 5,
+        "wage": {
+          "start": "32,000",
+          "end": "90,000"
+        },
+        "updates": "200 people subscribed last week"
+      }
+    ],
+    "alternate": [
+      {
+        "id": 1,
+        "logo": "Logo path",
+        "heading": "Certified Nursing Assistant",
+        "subHeading": "Patient Care",
+        "crIndex": 60,
+        "description": "Cartified Nursing Assistant (CNA) provide and coordinate patient care, educate patients and the public...",
+        "jobOpenings": 5,
+        "wage": {
+          "start": "32,000",
+          "end": "90,000"
+        },
+        "updates": "200 people subscribed last week"
+      },
+      {
+        "id": 2,
+        "logo": "sdf",
+        "heading": "Certified Nursing Assistant",
+        "subHeading": "Patient Care",
+        "crIndex": 80,
+        "description": "Cartified Nursing Assistant (CNA) provide and coordinate patient care, educate patients and the public...",
+        "jobOpenings": 5,
+        "wage": {
+          "start": "32,000",
+          "end": "90,000"
+        },
+        "updates": "200 people subscribed last week"
+      },
+      {
+        "id": 3,
+        "logo": "sdf",
+        "heading": "Certified Nursing Assistant",
+        "subHeading": "Patient Care",
+        "crIndex": 20,
+        "description": "Cartified Nursing Assistant (CNA) provide and coordinate patient care, educate patients and the public...",
+        "jobOpenings": 5,
+        "wage": {
+          "start": "32,000",
+          "end": "90,000"
+        },
+        "updates": "200 people subscribed last week"
+      }
+    ]
+  },
+  "jobs": {
+    "applied": [
+      {
+        "id": 1,
+        "logo": "Logo path",
+        "heading": "Certified Nursing Assistant",
+        "subHeading": "Patient Care",
+        "crIndex": 82,
+        "skills": "Competitive pay & weekly paychecks, Health, dental, vision, and life insurance Job.",
+        "description": "Cartified Nursing Assistant (CNA) provide and coordinate patient care, educate patients and the public...",
+        "jobOpenings": 5,
+        "wage": {
+          "start": "32,000",
+          "end": "90,000"
+        },
+        "updates": "200 people subscribed last week"
+      },
+      {
+        "id": 2,
+        "logo": "sdf",
+        "heading": "Certified Nursing Assistant",
+        "subHeading": "Patient Care",
+        "crIndex": 75,
+        "skills": "Competitive pay & weekly paychecks, Health, dental, vision, and life insurance Job.",
+        "description": "Cartified Nursing Assistant (CNA) provide and coordinate patient care, educate patients and the public...",
+        "jobOpenings": 5,
+        "wage": {
+          "start": "32,000",
+          "end": "90,000"
+        },
+        "updates": "200 people subscribed last week"
+      },
+      {
+        "id": 3,
+        "logo": "sdf",
+        "heading": "Certified Nursing Assistant",
+        "subHeading": "Patient Care",
+        "crIndex": 40,
+        "skills": "Competitive pay & weekly paychecks, Health, dental, vision, and life insurance Job.",
+        "description": "Cartified Nursing Assistant (CNA) provide and coordinate patient care, educate patients and the public...",
+        "jobOpenings": 5,
+        "wage": {
+          "start": "32,000",
+          "end": "90,000"
+        },
+        "updates": "200 people subscribed last week"
+      }
+    ],
+    "related": [
+      {
+        "id": 1,
+        "logo": "Logo path",
+        "heading": "Certified Nursing Assistant",
+        "subHeading": "Patient Care",
+        "crIndex": 60,
+        "skills": "Competitive pay & weekly paychecks, Health, dental, vision, and life insurance Job.",
+        "description": "Cartified Nursing Assistant (CNA) provide and coordinate patient care, educate patients and the public...",
+        "jobOpenings": 5,
+        "wage": {
+          "start": "32,000",
+          "end": "90,000"
+        },
+        "updates": "200 people subscribed last week"
+      },
+      {
+        "id": 2,
+        "logo": "sdf",
+        "heading": "Certified Nursing Assistant",
+        "subHeading": "Patient Care",
+        "crIndex": 80,
+        "skills": "Competitive pay & weekly paychecks, Health, dental, vision, and life insurance Job.",
+        "description": "Cartified Nursing Assistant (CNA) provide and coordinate patient care, educate patients and the public...",
+        "jobOpenings": 5,
+        "wage": {
+          "start": "32,000",
+          "end": "90,000"
+        },
+        "updates": "200 people subscribed last week"
+      },
+      {
+        "id": 3,
+        "logo": "sdf",
+        "heading": "Certified Nursing Assistant",
+        "subHeading": "Patient Care",
+        "crIndex": 20,
+        "skills": "Competitive pay & weekly paychecks, Health, dental, vision, and life insurance Job.",
+        "description": "Cartified Nursing Assistant (CNA) provide and coordinate patient care, educate patients and the public...",
+        "jobOpenings": 5,
+        "wage": {
+          "start": "32,000",
+          "end": "90,000"
+        },
+        "updates": "200 people subscribed last week"
+      }
+    ]
+  },
+  "openings": [
+    {
+      "id": 1,
+      "logo": "Logo path",
+      "heading": "Certified Nursing Assistant",
+      "subHeading": "Patient Care",
+      "crIndex": 82,
+      "description": "Cartified Nursing Assistant (CNA) provide and coordinate patient care, educate patients and the public...",
+      "jobOpenings": 5,
+      "wage": {
+        "start": "32,000",
+        "end": "90,000"
+      },
+      "updates": "200 people subscribed last week"
+    },
+    {
+      "id": 2,
+      "logo": "sdf",
+      "heading": "Certified Nursing Assistant",
+      "subHeading": "Patient Care",
+      "crIndex": 75,
+      "description": "Cartified Nursing Assistant (CNA) provide and coordinate patient care, educate patients and the public...",
+      "jobOpenings": 5,
+      "wage": {
+        "start": "32,000",
+        "end": "90,000"
+      },
+      "updates": "200 people subscribed last week"
+    },
+    {
+      "id": 3,
+      "logo": "sdf",
+      "heading": "Certified Nursing Assistant",
+      "subHeading": "Patient Care",
+      "crIndex": 40,
+      "description": "Cartified Nursing Assistant (CNA) provide and coordinate patient care, educate patients and the public...",
+      "jobOpenings": 5,
+      "wage": {
+        "start": "32,000",
+        "end": "90,000"
+      },
+      "updates": "200 people subscribed last week"
+    }
+  ],
+  "profile": {
+    "workExperiences": [
+      {
+        "title": "Certified Nursing Assistant",
+        "company": "ABC Staffing Company",
+        "location": "New York",
+        "date": {
+          "from": "March 2012",
+          "to": "Present"
+        },
+        "description": "Knowledge of relevant nursing care, certification, Multi-tasking skills, Effective oral, written, and reading communication skills. What is Lorem Ipsum Lorem Ipsum is simply dummy text"
+      },
+      {
+        "title": "Certified Nursing Assistant",
+        "company": "ABC Staffing Company",
+        "location": "New York",
+        "date": {
+          "from": "March 2012",
+          "to": "Dec 2020"
+        },
+        "description": "Knowledge of relevant nursing care, certification, Multi-tasking skills, Effective oral, written, and reading communication skills. What is Lorem Ipsum Lorem Ipsum is simply dummy text"
+      }
+    ],
+    "otherExperiences": [
+      {
+        "title": "Certified Nursing Assistant",
+        "company": "ABC Staffing Company",
+        "location": "New York",
+        "date": {
+          "from": "March 2012",
+          "to": "Present"
+        },
+        "description": "Knowledge of relevant nursing care, certification, Multi-tasking skills, Effective oral, written, and reading communication skills. What is Lorem Ipsum Lorem Ipsum is simply dummy text"
+      },
+      {
+        "title": "Certified Nursing Assistant",
+        "company": "ABC Staffing Company",
+        "location": "New York",
+        "date": {
+          "from": "March 2012",
+          "to": "Dec 2020"
+        },
+        "description": "Knowledge of relevant nursing care, certification, Multi-tasking skills, Effective oral, written, and reading communication skills. What is Lorem Ipsum Lorem Ipsum is simply dummy text"
+      }
+    ],
+    "certifications": [
+      {
+        "title": "CNA Nursing Certificate",
+        "issuer": "Commonwealth of Massachusetts Department of Public Health",
+        "issudeDate": "March 2014",
+        "certificateLink": "https://i.ytimg.com/vi/KDqoYyCeQ3I/maxresdefault.jpg",
+        "description": "Knowledge of relevant nursing care, certification, Multi-tasking skills, Effective oral, written, and reading communication skills. What is Lorem Ipsum Lorem Ipsum is simply dummy text",
+        "doc": "https://previews.123rf.com/images/serhiibrovko/serhiibrovko1710/serhiibrovko171000043/87339894-creative-certificate-of-appreciation-award-template-certificate-template-design-with-best-award-symb.jpg"
+      },
+      {
+        "title": "CNA Nursing Certificate",
+        "issuer": "Commonwealth of Massachusetts Department of Public Health",
+        "issudeDate": "March 2014",
+        "certificateLink": "https://binaries.templates.cdn.office.net/support/templates/en-us/lt04027254.png",
+        "description": "Knowledge of relevant nursing care, certification, Multi-tasking skills, Effective oral, written, and reading communication skills. What is Lorem Ipsum Lorem Ipsum is simply dummy text",
+        "doc": "https://omextemplates.content.office.net/support/templates/en-us/lt78500733.png"
+      }
+    ],
+    "education": [
+      {
+        "title": "ABC School, Sometown, CT",
+        "profile": "Nursing Diploma",
+        "institute": "ABC University",
+        "date": {
+          "from": "Dec 2001",
+          "to": "Jun 2003"
+        },
+        "major": "Patient care",
+        "minor": "Practicing Empathy",
+        "strengths": "Knowledge of relevant nursing care, Friendly and professional bedside manner, Maintains current CPR certification, Multi-tasking skills, Effective oral, written, and reading communication skills. Additional Comments : Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.."
+      },
+      {
+        "title": "ABC School, Sometown, CT",
+        "profile": "Nursing Diploma",
+        "institute": "ABC University",
+        "date": {
+          "from": "Dec 2001",
+          "to": "Jun 2003"
+        },
+        "major": "Patient care",
+        "minor": "Practicing Empathy",
+        "strengths": "Knowledge of relevant nursing care, Friendly and professional bedside manner, Maintains current CPR certification, Multi-tasking skills, Effective oral, written, and reading communication skills. Additional Comments : Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.."
+      }
+    ]
+  }
+}

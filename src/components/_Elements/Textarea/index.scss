@@ -1,0 +1,27 @@
+.common-textarea {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50px;
+  font-size: 17px;
+  color: #6b6c6f;
+  max-height: 200px;
+
+  /* PLACEHOLDER COLOR */
+  &::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #cdcdcd;
+  }
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #cdcdcd;
+  }
+  &:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #cdcdcd;
+  }
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    color: #cdcdcd;
+  }
+}

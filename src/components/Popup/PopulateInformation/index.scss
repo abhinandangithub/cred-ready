@@ -1,0 +1,16 @@
+@import "../../../variables.scss";
+
+.populate-information {
+	.content {
+		padding: 40px 30px 0px 30px;
+		p {
+			font-size: 22px;
+			margin: 0 0 40px;
+		}
+		.cta {
+			.outline {
+				margin-right: 20px;
+			}
+		}
+	}
+}

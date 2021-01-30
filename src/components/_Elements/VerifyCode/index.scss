@@ -1,0 +1,36 @@
+@import "../../../variables.scss";
+
+.verify-code {
+	width: 200px;
+	input {
+		margin: 0 5px;
+		text-align: center;
+		// line-height: 40px;
+		font-size: 30px;
+		border: none;
+		border-radius: 0;
+		border-bottom: 2px solid rgba(204, 204, 204, 1);
+		width: 30px;
+		transition: all 0.2s ease-in-out;
+		padding: 0;
+		overflow: visible;
+		// outline: none;
+		// text-shadow: 0 0 0 #000;
+		color: black;
+
+		&:focus,
+		&:active {
+			border-bottom: 2px solid $primary-color;
+			outline: none;
+		}
+		&::selection {
+			background: transparent;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.verify-code {
+		margin-top: 15px;
+	}
+}

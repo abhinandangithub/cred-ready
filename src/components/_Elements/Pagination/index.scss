@@ -1,0 +1,28 @@
+@import "../../../variables.scss";
+
+.pagination {
+  // background-color: yellow;
+  display: flex;
+  justify-content: flex-end;
+  li {
+    color: $secondary-color;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    height: 30px;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+    &.active {
+      color: white;
+      background-color: $secondary-color;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

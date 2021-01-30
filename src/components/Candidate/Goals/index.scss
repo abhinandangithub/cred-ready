@@ -1,0 +1,62 @@
+@import "../../../variables.scss";
+
+.goals {
+	.current-goals {
+		margin-bottom: 40px;
+	}
+	.cta {
+		margin-top: 30px;
+	}
+	.heading {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 15px;
+		h2 {
+			font-weight: 400;
+			font-size: 22px;
+		}
+	}
+	.primary-btn.filter_btn {
+		width: 51px;
+		height: 51px;
+		min-width: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.current-goals {
+		&.mobile {
+			margin-bottom: 0;
+		}
+		.common-main-heading {
+			justify-content: flex-start;
+			h2 {
+				color: black;
+				cursor: pointer;
+				margin-right: 20px;
+				&:last-child {
+					margin-right: 0px;
+				}
+				&.active {
+					color: $secondary-color;
+					border-bottom: 1px solid $secondary-color;
+				}
+			}
+		}
+		.filters {
+			margin-top: -20px;
+		}
+	}
+}
+@media screen and (max-width: 460px) {
+	.current-goals .common-main-heading h2 {
+		color: black;
+		cursor: pointer;
+		margin-right: 18px;
+	}
+
+}

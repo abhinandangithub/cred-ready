@@ -1,0 +1,164 @@
+@import "../../../variables.scss";
+
+.dashboard-candidate {
+	.application-status {
+		margin-bottom: 40px;
+		.listing {
+			align-items: stretch;
+			background: white;
+			text-transform: capitalize;
+			.left {
+				background-color: #f8fafb;
+				flex: 1;
+				ul {
+					border: 1px solid #bdd1e4;
+					border-right: none;
+					li {
+						list-style: none;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						padding: 15px;
+						border-bottom: 1px solid #bdd1e4;
+						border-right: 1px solid #bdd1e4;
+						cursor: pointer;
+						h2,
+						p {
+							margin: 0;
+						}
+						p {
+							color: grey;
+						}
+						h2 {
+							margin-bottom: 5px;
+							font-weight: 500;
+							font-size: 24px;
+						}
+						.primary-btn {
+							width: auto;
+						}
+						.logo {
+							border: 1px solid #bdd1e4;
+							height: 60px;
+							width: 60px;
+							padding: 4px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							margin-right: 20px;
+							img {
+								width: 100%;
+							}
+						}
+						.text {
+							flex: 1 1;
+							margin-right: 20px;
+							.ellip {
+								overflow: hidden;
+								text-overflow: ellipsis;
+								display: -webkit-box;
+								-webkit-line-clamp: 3;
+								-webkit-box-orient: vertical;
+							}
+						}
+						.btn_outer {
+							.cred-ready-index {
+								display: none;
+							}
+						}
+						&:last-child {
+							border-bottom: none;
+						}
+						&:hover {
+							background-color: #ececec42;
+						}
+						&.active {
+							background-color: #fff5e4;
+							border-right: none;
+						}
+					}
+				}
+			}
+			.right {
+				width: 300px;
+				background-color: #fff5e4;
+				svg {
+					width: 90%;
+				}
+			}
+		}
+		.current-goals {
+			margin-bottom: 40px;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.cta .primary-btn {
+			width: 45%;
+		}
+		.cta .primary-btn .apply {
+			width: 100%;
+		}
+		.current-goals {
+			.common-main-heading {
+				justify-content: flex-start;
+				h2 {
+					color: black;
+					cursor: pointer;
+					&:first-child {
+						margin-right: 20px;
+					}
+					&.active {
+						color: $secondary-color;
+						border-bottom: 1px solid $secondary-color;
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 768px) {
+	.dashboard-candidate {
+		.application-status {
+			.listing {
+				.left {
+					ul {
+						li {
+							flex-direction: column;
+							.text {
+								margin-right: 0;
+								width: 100%;
+								margin-bottom: 20px;
+							}
+							.btn_outer {
+								width: 100%;
+								display: flex;
+								align-items: center;
+								justify-content: space-between;
+								.cred-ready-index {
+									display: block;
+									width: 170px;
+									h4 {
+										font-size: 14px;
+										padding-left: 0 !important;
+									}
+									p {
+										display: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 460px) {
+	.cta .primary-btn {
+		width: 45%;
+	}
+	.cta .primary-btn .apply {
+		width: 100%;
+	}
+}

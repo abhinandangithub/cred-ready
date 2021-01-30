@@ -1,0 +1,234 @@
+@import "../../variables.scss";
+
+.header {
+	height: 70px;
+	background-color: #fff;
+	justify-content: space-between;
+	width: 100%;
+	z-index: 8;
+	top: 0;
+	left: 0;
+	position: fixed;
+	transition: all 0.2s ease;
+	box-shadow: 0 2px 40px 1px rgba(221, 229, 252, 0.5);
+	z-index: 999;
+	.left,
+	.right {
+		height: 100%;
+		font-size: 16px;
+	}
+	.menu_outer {
+		background-color: $secondary-color;
+		height: 100%;
+		width: 85px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		transition: all 0.2s ease;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		.menu {
+			width: 85px;
+			align-self: stretch;
+			border: none;
+			background-color: $secondary-color;
+			cursor: pointer;
+			text-align: right;
+			padding-right: 30px;
+			border-right: 1px solid rgba(255, 255, 255, 0.2);
+			svg {
+				color: white;
+				pointer-events: none;
+			}
+			.arrow,
+			.close {
+				display: none;
+			}
+			.arrow {
+				font-size: 32px;
+			}
+			.close {
+				font-size: 32px;
+			}
+			.lines {
+				font-size: 32px;
+			}
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+	}
+	.logo {
+		margin-left: 30px;
+		img {
+			height: 70px;
+			display: block;
+		}
+	}
+	.right {
+		.menu_outer {
+			display: none;
+		}
+		.notification {
+			padding: 0 20px;
+			height: 100%;
+			// width: 80px;
+			border-left: 1px solid #afb5c44a;
+			border-right: 1px solid #afb5c44a;
+			color: #898989;
+			cursor: pointer;
+			.icon {
+				position: relative;
+				margin-top: 6px;
+				svg {
+					fill: white;
+					width: 26px;
+					stroke: #898989;
+					stroke-width: 1;
+					stroke-linecap: butt;
+					stroke-dasharray: 0;
+				}
+				.count {
+					position: absolute;
+					background: $primary-color;
+					border-radius: 50%;
+					color: white;
+					width: 20px;
+					height: 20px;
+					right: -8px;
+					top: -9px;
+					font-size: 11px;
+				}
+			}
+			&:hover {
+				background-color: rgb(247, 246, 246);
+			}
+		}
+
+		.user {
+			height: 100%;
+			padding: 0 35px;
+			cursor: pointer;
+			color: white;
+			text-decoration: none;
+			position: relative;
+			min-width: 180px;
+			.user-info {
+				.pic {
+					width: 36px;
+					border-radius: 50%;
+				}
+				.arrow {
+					// width: 17px;
+					// color: #bcd1e4;
+					color: #b6b6b6;
+					font-size: 28px;
+				}
+				.user-name {
+					font-size: 14px;
+					margin: 0 13px 0 10px;
+					color: $secondary-color;
+				}
+			}
+			.user-nav {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				right: 0;
+				z-index: 9;
+				background-color: white;
+				border-left: 1px solid #afb5c44a;
+				box-shadow: 0 2px 30px 1px rgba(176, 192, 237, 0.45);
+				// border-radius: 5px;
+				overflow: hidden;
+				display: none;
+				li {
+					a {
+						color: #898989;
+						padding: 15px 30px;
+						display: block;
+						border-bottom: 1px solid #afb5c44a;
+						svg {
+							margin-right: 15px;
+						}
+						&:hover {
+							background-color: rgba(226, 226, 226, 0.63);
+							// background-color: #e4e4e4d4;
+						}
+					}
+				}
+			}
+			&:hover {
+				background-color: rgb(247, 246, 246);
+			}
+			&.active {
+				background-color: rgb(247, 246, 246);
+				.user-nav {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.header {
+		.logo {
+			img {
+				height: 60px;
+			}
+		}
+		.left {
+			.menu_outer {
+				display: none;
+			}
+		}
+		.right {
+			.notification,
+			.user {
+				display: none;
+			}
+			.menu_outer {
+				display: flex;
+				background-color: white;
+				border-left: 1px solid rgb(240, 240, 240);
+				.menu {
+					background-color: white;
+					svg {
+						color: $secondary-color;
+					}
+				}
+			}
+		}
+	}
+	.auth-page .right .logo {
+		border: 1px solid rgba(0, 145, 208, 1);
+		background-color: #ffffff;
+	}
+	.logo .img {
+		width: 80% !important;
+	}
+	.fancy-toggle + label {
+		color: gray;
+	}
+
+	.auth-page .right .content .help-block a {
+		color: gray;
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	.auth-page .right .logo {
+		border: 1px solid rgba(0, 145, 208, 1);
+		background-color: #ffffff;
+	}
+	.logo .img {
+		width: 80% !important;
+	}
+	.fancy-toggle + label {
+		color: gray;
+	}
+
+	.auth-page .right .content .help-block a {
+		color: gray;
+	}
+}

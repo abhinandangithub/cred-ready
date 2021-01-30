@@ -1,0 +1,56 @@
+@import "../../../../../variables.scss";
+
+.strengths {
+	.content {
+		box-shadow: 0 2px 30px 1px rgba(176, 192, 237, 0.45);
+		.strength-tabs {
+			display: flex;
+			li {
+				list-style-type: none;
+				color: #6b6c6f;
+				flex: 0.25;
+				text-align: left;
+				padding: 15px 40px;
+				border-bottom: 3px solid #d9d9d9;
+				cursor: pointer;
+				&:hover {
+					opacity: 0.9;
+				}
+				&.active {
+					border-bottom: 3px solid $secondary-color;
+					color: $secondary-color;
+				}
+			}
+		}
+		.other-sliders {
+			padding: 40px;
+			.add-btn {
+				margin-bottom: 70px;
+			}
+			ul {
+				li {
+					display: flex;
+					margin-bottom: 70px;
+					.slider {
+						width: 300px;
+					}
+					.label {
+						flex: 1;
+						margin-left: 40px;
+						color: #6b6c6f;
+					}
+					&:last-child {
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+	.cta {
+		text-align: right;
+		margin-top: 40px;
+		.primary-btn {
+			margin-left: 20px;
+		}
+	}
+}

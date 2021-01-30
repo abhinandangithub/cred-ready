@@ -1,0 +1,30 @@
+.explore-goals {
+	.outerPart{
+		display: flex;
+		margin-bottom: 10px;
+		font-size: 16px;
+	}
+	.goalsPart{
+		margin-right: 10px;
+		color: #737477;
+	}
+	.exploreGoalsPart{
+		color: #0092D0;
+		margin-left: 10px;
+	}
+
+	.outer {
+		display: flex;
+		justify-content: space-between;
+		.left {
+			width: 330px;
+			background: #ffffff 0% 0% no-repeat padding-box;
+			box-shadow: 0px 2px 10px #b0c0ed26;
+			padding: 20px;
+			margin-right: 30px;
+		}
+		.right {
+			flex: 1;
+		}
+	}
+}

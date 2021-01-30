@@ -1,0 +1,565 @@
+@import "../../variables.scss";
+
+.auth-page {
+	background-color: lightgreen;
+	min-height: 100vh;
+	align-items: stretch;
+	.undeline {
+		text-decoration: underline;
+	}
+	.gray-clr {
+		background-color: #ccc !important;
+		pointer-events: none !important;
+	}
+	.left {
+		width: 40%;
+		/* width: 800px; */
+		// height: 100%;
+		background-color: #0092d0;
+		position: relative;
+		padding: 50px;
+		color: white;
+		.logo {
+			position: absolute;
+			left: 50px;
+			top: 50px;
+			img {
+				width: 200px;
+			}
+		}
+		.content {
+			max-width: 560px;
+			padding: 0 20px;
+			h1,
+			h2,
+			p {
+				margin: 0;
+			}
+			h1 {
+				margin: 5px 0 20px;
+				font-size: 70px;
+				font-weight: 500;
+			}
+			h2 {
+				font-size: 43px;
+				font-weight: normal;
+			}
+			p {
+				font-size: 21px;
+				font-weight: normal;
+				line-height: 1.3;
+			}
+		}
+	}
+
+	.right {
+		position: relative;
+		width: 60%;
+		/* width: calc(100% - 800px); */
+		// height: 100%;
+		// overflow: auto;
+		background-color: #f8fafb;
+		text-align: center;
+		.logo {
+			display: none;
+		}
+		.terms_n_conditions {
+			background: white;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 9;
+			text-align: left;
+			& + form {
+				display: none;
+			}
+			.text {
+				padding: 40px;
+				h1 {
+					margin-top: 0;
+					font-size: 24px;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					button {
+						background: transparent;
+						border: navajowhite;
+					}
+				}
+				h2 {
+					font-size: 17px;
+					margin-top: 0;
+				}
+				p {
+					font-size: 13px;
+					&.mb_0 {
+						margin-bottom: 0;
+					}
+				}
+				.cta {
+					text-align: right;
+					margin-top: 30px;
+				}
+			}
+		}
+		& > .content {
+			width: 450px;
+			// padding: 100px 0;
+			// font-size: 300%;
+			h3 {
+				color: $secondary-color;
+				font-size: 30px;
+				font-weight: normal;
+				margin: 20px 0;
+			}
+			a {
+				color: $secondary-color;
+			}
+			.help-block {
+				font-size: 16px;
+				justify-content: space-between;
+				margin-bottom: 20px;
+				input {
+					display: none;
+				}
+				a {
+					color: $grey-color;
+				}
+			}
+			.user-type {
+				// text-align: left;
+				// justify-content: space-between;
+				// margin: 0 auto 30px;
+				// width: 270px;
+				// color: $grey-color;
+				// font-size: 20px;
+				// li {
+				// 	display: inline;
+				// }
+			}
+			.fields {
+				display: inline;
+				text-align: left;
+				li {
+					list-style: none;
+					margin-bottom: 20px;
+					label {
+						display: block;
+						margin-bottom: 10px;
+						color: $grey-color;
+						span {
+							color: red;
+							margin-left: 4px;
+						}
+					}
+					input {
+						width: 100%;
+						padding: 12px 50px 12px 53px;
+						border: 1px solid #cdcdcd;
+						border-radius: 50px;
+						font-size: 17px;
+						background-repeat: no-repeat;
+						background-position: 14px center;
+						&.error-input {
+							border: 1px solid red;
+						}
+						&[name="organisation"] {
+							background-image: url(../../assets/employee-name.jpg);
+							background-size: 27px;
+						}
+						&[name="name"] {
+							background-image: url(../../assets/employee-name.jpg);
+							background-size: 27px;
+						}
+						&[name="email"] {
+							background-image: url(../../assets/email.jpg);
+							background-size: 33px;
+						}
+						&[name="phone"] {
+							background-image: url(../../assets/phone.jpg);
+							background-size: 32px;
+						}
+						&[name^="password"] {
+							background-image: url(../../assets/password.jpg);
+							background-size: 33px;
+						}
+					}
+					.user-type {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						margin-bottom: 25px;
+						label {
+							margin-bottom: 0;
+							flex: 0.5;
+							margin-right: 0;
+							text-align: center;
+						}
+						span {
+							margin: 0 10px;
+							font-size: 16px;
+						}
+					}
+				}
+				.password {
+					position: relative;
+					.toggle {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						right: 16px;
+						color: $grey-color;
+						cursor: pointer;
+						&:hover {
+							opacity: 0.8;
+						}
+						svg {
+							opacity: 0.3;
+							pointer-events: none;
+						}
+					}
+				}
+				.hint {
+					font-size: 14px;
+					margin-bottom: 0;
+					color: gray;
+				}
+				#function {
+					input {
+						background-color: white;
+					}
+				}
+			}
+			.primary-btn {
+				margin: 30px 0 20px;
+			}
+			.error {
+				background-color: #f2d1ca;
+				color: #6b6c6f;
+				padding: 20px;
+				font-size: 17px;
+				margin-bottom: 25px;
+			}
+			.agree {
+				font-size: 16px;
+				display: flex;
+				align-items: center;
+				// justify-content: center;
+				margin: 35px 0 -20px;
+				label {
+					display: flex !important;
+				}
+				&.allow {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+
+	.thank-you {
+		h1 {
+			font-size: 24px;
+			font-weight: 500;
+			color: #000000;
+			text-align: left;
+			line-height: 1.6;
+			margin-bottom: 30px;
+		}
+	}
+
+	.forgot_password {
+		.primary-btn {
+			min-width: 202px;
+			&.outline {
+				border-color: $secondary-color !important;
+			}
+			&.blue {
+				color: white !important;
+			}
+			&:first-child {
+				margin-right: 15px;
+			}
+		}
+		.sub_heading {
+			color: black;
+			font-size: 18px;
+			margin-bottom: 40px;
+		}
+		.fields {
+			li {
+				max-width: 340px;
+				margin: 0 auto;
+			}
+		}
+		p {
+			margin: 0;
+		}
+		.code-box {
+			margin: 40px 0;
+			color: $grey-color;
+			span {
+				color: $red-color;
+			}
+			.code {
+				margin-left: 15px;
+			}
+		}
+		.status {
+			font-size: 16px;
+			margin: 20px 0 20px;
+			font-weight: 500;
+			.time {
+				color: $red-color;
+			}
+			&.resend {
+				color: $secondary-color;
+				cursor: pointer;
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+		.error-code {
+			color: red;
+			font-size: 16px;
+			margin-top: 10px;
+			margin-bottom: -10px;
+		}
+		.verify-code {
+			input {
+				background-color: #f8fafb;
+				border-color: rgba(0, 146, 208, 0.2);
+				&:focus,
+				&:active {
+					border-color: $secondary-color;
+				}
+			}
+		}
+	}
+
+	/* PLACEHOLDER COLOR */
+	::-webkit-input-placeholder {
+		/* Chrome/Opera/Safari */
+		color: #cdcdcd;
+	}
+	::-moz-placeholder {
+		/* Firefox 19+ */
+		color: #cdcdcd;
+	}
+	:-ms-input-placeholder {
+		/* IE 10+ */
+		color: #cdcdcd;
+	}
+	:-moz-placeholder {
+		/* Firefox 18- */
+		color: #cdcdcd;
+	}
+
+	.common-input-dropdown {
+		input {
+			background-image: url(../../assets/org.svg);
+			background-size: 26px;
+		}
+		.heading {
+			background-color: transparent !important;
+		}
+		.content {
+			li {
+				margin-bottom: 0 !important;
+				&:first-child {
+					border-top: none;
+				}
+			}
+		}
+		&.active {
+			.heading {
+				input {
+					// border-radius: 23px 23px 0 0 !important;
+				}
+			}
+			.content {
+				padding: 21px 0 0 !important;
+				top: 50%;
+				max-height: 309px;
+			}
+		}
+	}
+}
+.donthaveaccount {
+	color: gray;
+}
+.createanaccount {
+	border-bottom: 1px solid gray;
+}
+.forgot {
+	color: gray;
+}
+.textunderline {
+	color: #0092d0;
+	text-decoration: underline;
+}
+
+// .option.radio_button {
+// 	display: block;
+// }
+@media only screen and (max-height: 750px) {
+	.fancy-toggle + label {
+		color: gray;
+	}
+	.auth-page {
+		.left {
+			.logo {
+				left: 30px;
+				top: 30px;
+				img {
+					width: 150px;
+				}
+			}
+			.content {
+				min-width: 410px;
+				margin-top: 50px;
+				h2 {
+					font-size: 33px;
+				}
+				h1 {
+					margin: 0 0 10px 0;
+					font-size: 50px;
+				}
+			}
+		}
+		&.sign_up {
+			// .right {
+			// 	overflow: auto;
+			// 	align-items: unset;
+			// 	.content {
+			// 		padding: 40px 0;
+			// 		height: fit-content;
+			// 	}
+			// }
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	h2.welcomeText {
+		padding: 0px;
+		font-size: 36px;
+		height: 30px !important;
+		margin: 0px;
+		color: $secondary-color;
+	}
+	.login_account {
+		font-size: 18px !important;
+		color: #000000 !important;
+	}
+	.auth-page {
+		background-color: transparent;
+		justify-content: flex-start;
+		overflow: hidden;
+		&.flex {
+			flex-direction: column;
+		}
+		.left,
+		.right {
+			width: 100%;
+		}
+		.left {
+			background-image: url("../../assets/auth_bg.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 250px;
+			min-height: 250px;
+			max-height: 250px;
+			position: relative;
+			&:after {
+				position: absolute;
+				content: "";
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 146, 208, 0.8);
+			}
+			.logo {
+				display: none;
+			}
+			.content {
+				display: none;
+			}
+		}
+		.right {
+			border-radius: 80px 80px 0 0;
+			margin-top: -80px;
+			align-items: unset;
+			padding-top: 150px;
+			height: calc(100% - 170px);
+			background-color: white;
+			.terms_n_conditions {
+				position: fixed;
+				overflow: auto;
+				& + .sign_up,
+				& + .log_in {
+					overflow: hidden;
+				}
+			}
+			& > .content {
+				padding: 0 30px;
+				margin-top: -60px;
+				padding-bottom: 30px;
+				&.sign_up,
+				&.log_in {
+					// height: 900px;
+					.mobile {
+						// height: 100px;
+					}
+				}
+				.primary-btn {
+					width: 100%;
+				}
+			}
+			.logo {
+				width: 120px;
+				height: 120px;
+				border: 1px solid rgba(255, 255, 255, 0.521);
+				position: absolute;
+				top: -60px;
+				left: 50%;
+				background: $secondary-color;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transform: translateX(-50%);
+				border-radius: 50%;
+				img {
+					width: calc(100% - 10px);
+				}
+			}
+		}
+		.forgot_password {
+			.fields {
+				li {
+					max-width: none;
+				}
+			}
+			.mobile {
+				// height: 100px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 460px) {
+	h2.welcomeText {
+		padding: 0px;
+		font-size: 36px;
+		height: 30px !important;
+		margin: 0px;
+		color: $secondary-color;
+	}
+	.login_account {
+		font-size: 18px !important;
+		color: #000000 !important;
+	}
+}

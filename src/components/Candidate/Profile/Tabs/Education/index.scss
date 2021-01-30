@@ -1,0 +1,41 @@
+@import "../../../../../variables.scss";
+
+.education {
+	.cta {
+		text-align: right;
+		margin-top: 20px;
+		.primary-btn {
+			margin-left: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.education {
+		box-shadow: none !important;
+		background-color: transparent !important;
+		padding: 0;
+		._heading {
+			font-size: 30px;
+			color: $secondary-color;
+			font-weight: 400;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 0px;
+			display: flex !important;
+		}
+		.sub-heading {
+			color: black;
+			margin-bottom: 40px;
+			margin-top: 10px;
+		}
+		.cta {
+			margin-top: 60px;
+			display: flex;
+			flex-direction: column-reverse;
+			.primary-btn {
+				margin-left: 0px;
+			}
+		}
+	}
+}

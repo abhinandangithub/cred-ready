@@ -1,0 +1,42 @@
+@import "../../../variables.scss";
+
+.delete-popup {
+	.content {
+		padding: 40px 30px 0px 30px;
+		.highlight {
+			background-color: #fbecc9;
+			background-image: url("../../../assets/delete.jpg");
+			background-size: 34px 36px;
+			background-repeat: no-repeat;
+			background-position: 15px center;
+			padding: 20px 20px 20px 60px;
+			margin-bottom: 50px;
+			h2,
+			p {
+				margin: 0;
+				text-align: left;
+			}
+			h2 {
+				font-size: 20px;
+				margin-bottom: 5px;
+			}
+		}
+		.cta {
+			.outline {
+				margin-left: 20px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.delete-popup {
+		.content {
+			.cta {
+				.outline {
+					margin-left: 0px;
+				}
+			}
+		}
+	}
+}

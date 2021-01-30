@@ -1,0 +1,68 @@
+@import "../../../../variables.scss";
+
+.profile-view {
+	align-self: stretch;
+	width: calc(100% - 380px);
+	flex: 1 1;
+	margin-left: 30px;
+	& > .content {
+		box-shadow: 0 2px 30px 1px rgba(176, 192, 237, 0.45);
+		padding: 30px 25px;
+		background: white;
+		position: relative;
+		.listing {
+			li {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				p {
+					flex: 0.5;
+					margin-top: 0;
+					margin-bottom: 20px;
+					color: #6b6c6f;
+				}
+				&.address {
+					flex-direction: column;
+				}
+				ul {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+
+					.divider {
+						color: #6b6c6f;
+						position: relative;
+						margin-bottom: 15px;
+						span {
+							background: white;
+							padding-right: 10px;
+							position: relative;
+							z-index: 1;
+							font-style: italic;
+						}
+						&:after {
+							position: absolute;
+							content: "";
+							width: 100%;
+							height: 100%;
+							border-bottom: 1px dashed rgb(204, 204, 204);
+							bottom: 50%;
+						}
+					}
+				}
+			}
+		}
+		.edit {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			border: none;
+			background: transparent;
+			font-size: 20px;
+			color: #0092d0;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

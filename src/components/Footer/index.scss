@@ -1,0 +1,36 @@
+@import "../../variables.scss";
+
+.footer {
+	background: #fff;
+	// position: fixed;
+	// left: 85px;
+	// width: calc(100% - 85px);
+	// bottom: 0;
+	/* background: #9a2525; */
+	padding: 0 30px;
+	height: 70px;
+	justify-content: left;
+	font-size: 16px;
+	transition: all 0.2s ease;
+	margin-top: 40px;
+	box-shadow: 0 2px 30px 1px rgba(176, 192, 237, 0.45);
+	p {
+		margin: 0;
+		a {
+			margin-left: 20px;
+			color: $secondary-color;
+			text-decoration: underline;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.footer {
+		justify-content: center;
+		p {
+			a {
+				display: none;
+			}
+		}
+	}
+}

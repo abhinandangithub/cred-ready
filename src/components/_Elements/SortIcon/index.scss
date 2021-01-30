@@ -1,0 +1,18 @@
+.sort-icon {
+  width: 11px;
+  margin-left: 8px;
+  .up,
+  .down {
+    fill: #bdbdbd;
+  }
+  &.up {
+    .up {
+      fill: grey;
+    }
+  }
+  &.down {
+    .down {
+      fill: grey;
+    }
+  }
+}

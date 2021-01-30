@@ -1,0 +1,239 @@
+@import "../../../variables.scss";
+
+.job-view-cmp {
+	.position {
+		position: initial !important;
+	}
+	.landing {
+		margin-top: 10%;
+		color: white !important;
+		text-decoration: none !important;
+	}
+	align-items: flex-start;
+	.left {
+		flex: 1;
+		.top {
+			box-shadow: 0 2px 30px 1px rgba(176, 192, 237, 0.45);
+			background-color: white;
+			display: flex;
+			padding: 20px;
+			position: relative;
+			flex-wrap: wrap;
+			margin-bottom: 30px;
+			.logo {
+				// border: 1px solid #bcd1e4;
+				width: 60px;
+				padding: 3px;
+				margin-right: 15px;
+				height: 60px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				img {
+					width: 100%;
+					display: block;
+				}
+			}
+			.info {
+				h3,
+				p {
+					font-weight: 400;
+					margin: 0;
+				}
+				p {
+					margin-top: 10px;
+					color: #6b6c6f;
+				}
+			}
+			.short-info {
+				width: 100%;
+				display: flex;
+				color: #6b6c6f;
+				font-size: 16px;
+				margin-top: 15px;
+				justify-content: space-between;
+				p {
+					padding: 4px 0;
+					margin: 0;
+					background-position: left center;
+					background-repeat: no-repeat;
+					background-size: 20px;
+					padding-left: 30px;
+					&:first-child {
+						background-image: url("../../../assets/work-experience.png");
+						margin-right: 15px;
+					}
+					&:last-child {
+						// background-image: url("../../../assets/upload.jpg");
+						background-image: url("../../../assets/main-info-3.png");
+					}
+				}
+			}
+		}
+		.bottom {
+			box-shadow: 0 2px 30px 1px rgba(176, 192, 237, 0.45);
+			background-color: white;
+			padding: 20px;
+			p {
+				.heading {
+					font-weight: 500;
+				}
+				.text {
+					color: #6b6c6f;
+				}
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+			ul {
+				margin-left: 30px;
+				li {
+					color: #6b6c6f;
+					margin-bottom: 10px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+			.cta {
+				justify-content: space-between;
+				margin-top: 30px;
+				p {
+					color: red;
+					margin: 0;
+					flex: 1;
+				}
+			}
+		}
+	}
+	.right {
+		width: 350px;
+		margin-left: 30px;
+		p {
+			color: #6b6c6f;
+			margin-bottom: 15px;
+			margin-top: 0;
+		}
+		.login_screen {
+			position: absolute;
+			background-color: rgba(255, 255, 255, 0.878);
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			padding: 30px;
+			font-weight: 400;
+			p {
+				font-size: 20px;
+				color: black;
+			}
+			a {
+				color: $secondary-color;
+				text-decoration: underline;
+			}
+		}
+		.meter {
+			box-shadow: 0 2px 30px 1px rgba(176, 192, 237, 0.45);
+			background-color: white;
+			padding: 20px;
+			position: relative;
+			margin-bottom: 20px;
+			height: 40%;
+			// background: red;
+			display: flex;
+			flex-direction: column;
+			h4 {
+				margin-top: -10px;
+				font-size: 17px;
+				text-align: center;
+			}
+			.cred-details {
+			}
+			.text_index {
+				height: 100%;
+				// background: blue;
+				display: flex;
+				justify-content: space-around;
+				flex-direction: column;
+				margin-top: -15px;
+				& > p {
+					font-size: 14px;
+					color: black;
+					// margin-bottom: 10px;
+					// margin-top: -20px;
+				}
+			}
+			.cred-ready-index {
+				// background-color: blue;
+				margin-top: -30px;
+				flex: 1 1;
+				max-height: 62%;
+				// background: red;
+				h4 {
+					font-size: 17px;
+					line-height: 1;
+					margin-top: -1px;
+				}
+				p {
+					font-size: 14px;
+					color: black;
+				}
+				svg {
+					height: 75%;
+					// height: 70%;
+				}
+			}
+		}
+		.marginal {
+			height: 40%;
+			box-shadow: 0 2px 30px 1px rgba(176, 192, 237, 0.45);
+			background-color: white;
+			padding: 20px;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			h4 {
+				margin: 40px 0 0 0;
+				// margin-top: 0;
+				margin-top: -10px;
+				font-weight: 500;
+				text-align: center;
+				font-size: 17px;
+			}
+			img {
+				width: 100%;
+			}
+			.highcharts-container {
+				width: 100% !important;
+				height: 100% !important;
+				svg {
+					height: 100%;
+				}
+			}
+		}
+	}
+	.common-skills-list {
+		margin-left: 0px !important;
+		li {
+			&:last-child {
+				margin-bottom: 10px !important;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.job-view-cmp {
+		.right{
+		  .meter{
+			  height: auto;
+			.cred-ready-index {
+				margin-top: 0px;
+				max-height: auto;
+			}
+		} 
+
+		}
+		
+
+	}
+}

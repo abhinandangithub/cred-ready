@@ -1,0 +1,20 @@
+.add-strenght {
+	.content {
+		padding: 30px 30px 50px;
+		li {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			label {
+				width: 200px;
+				text-align: left;
+			}
+			&:last-child {
+				margin-top: 50px;
+			}
+		}
+		& + .cta {
+			margin: 40px 0;
+		}
+	}
+}

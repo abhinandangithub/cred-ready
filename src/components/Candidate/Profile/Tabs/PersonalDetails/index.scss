@@ -1,0 +1,136 @@
+@import "../../../../../variables.scss";
+
+.personal-details {
+	form {
+		& > .content {
+			background: white;
+			box-shadow: 0 2px 30px 1px rgba(176, 192, 237, 0.45);
+			padding: 30px;
+			.listing {
+				& > li {
+					display: flex;
+					align-items: center;
+					margin-bottom: 20px;
+					label {
+						width: 350px;
+						color: #6b6c6f;
+						span {
+							color: $red-color;
+						}
+					}
+					input[name="interestedIn"] {
+						display: none;
+					}
+
+					.common-input,
+					.common-dropdown,
+					.ui.fluid.dropdown {
+						width: calc(100% - 350px);
+						max-width: 500px;
+						border: 1px solid #cdcdcd;
+					}
+					&.industry {
+						& > label {
+							min-width: 450px;
+						}
+						div {
+							display: flex;
+							margin-left: 60px;
+							label {
+								width: auto;
+								margin-right: 30px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.cta {
+			text-align: right;
+			margin-top: 40px;
+			.primary-btn {
+				margin-left: 20px;
+			}
+		}
+	}
+	.personel-details-heading {
+		margin-top: 0px;
+		font-weight: 500;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.personal-details {
+		form {
+			.content {
+				box-shadow: none !important;
+				background-color: transparent !important;
+				padding: 0;
+				._heading {
+					font-size: 30px;
+					color: $secondary-color;
+					font-weight: 400;
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 0px;
+					display: flex !important;
+				}
+				.sub-heading {
+					color: black;
+					margin-bottom: 40px;
+					margin-top: 10px;
+					font-weight: bold;
+				}
+				.listing {
+					& > li {
+						flex-direction: column;
+						align-items: flex-start;
+						label {
+							font-size: 16px;
+							width: auto;
+						}
+						input,
+						.common-input,
+						.common-dropdown,
+						.common-textarea,
+						textarea {
+							border-top: 0;
+							border-left: 0;
+							border-right: 0;
+							border-radius: 0;
+						}
+						input,
+						.common-input,
+						.common-dropdown,
+						.ui.fluid.dropdown {
+							width: 100%;
+							max-width: none !important;
+						}
+						.ui.fluid.dropdown {
+							margin-top: 10px;
+						}
+						.common-input {
+							border: none;
+							border-bottom: 1px solid rgba(188, 209, 228, 1);
+							border-radius: 0;
+							padding: 12px 0px;
+							background: transparent;
+						}
+						.common-dropdown {
+							margin-top: 10px;
+						}
+					}
+				}
+			}
+
+			.cta {
+				display: flex;
+				flex-direction: column-reverse;
+				margin-top: 60px;
+				.primary-btn {
+					margin-left: 0px;
+				}
+			}
+		}
+	}
+}

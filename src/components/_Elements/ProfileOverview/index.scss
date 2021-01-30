@@ -1,0 +1,192 @@
+@import "../../../variables.scss";
+
+.profile-overview {
+	background-color: #fff;
+	// align-self: stretch;
+	// position: fixed;
+	align-self: flex-start;
+	max-width: 350px;
+	width: 35%;
+	box-shadow: 0 2px 30px 1px rgba(176, 192, 237, 0.45);
+	.primary {
+		text-align: center;
+		padding: 40px 20px;
+		.avatar {
+			width: 100%;
+			height: auto;
+			margin: 0 auto;
+			overflow: hidden;
+			padding-top: 100%;
+			border-radius: 50%;
+			position: relative;
+			border: 1px solid #dcdcdc;
+			color: grey;
+			img {
+				width: 100%;
+				display: block;
+				height: auto;
+				position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+			}
+			.edit {
+				position: absolute;
+				background: #00000045;
+				width: 100%;
+				bottom: 0;
+				height: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.btn {
+					color: white;
+					font-size: 14px;
+					cursor: pointer;
+					opacity: 0.8;
+					&:hover {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		h1 {
+			color: $secondary-color;
+			font-weight: 500;
+			margin: 20px 0 0;
+		}
+		h2 {
+			color: $secondary-color;
+			font-size: 30px;
+			font-weight: 500;
+			// color: #252b3d;
+			margin: 10px 0 10px;
+		}
+		h3 {
+			color: $secondary-color;
+			font-size: 26px;
+			font-weight: normal;
+			// color: #6b6c6f;
+			margin: 0;
+		}
+	}
+	.secondary {
+		ul {
+			.phone-error {
+				border-bottom: none;
+				margin-bottom: -16px;
+				.phone-hidden {
+					visibility: hidden;
+				}
+				.ml-27 {
+					margin-left: 27px;
+				}
+			}
+			.phone-block {
+				display: block !important;
+				.phone-icons {
+					display: flex;
+					// svg {
+					// 	&.check {
+					// 		top: 62% !important;
+					// 	}
+					// 	&.close,
+					// 	&.edit {
+					// 		top: 62% !important;
+					// 	}
+					// }
+				}
+			}
+			li {
+				list-style: none;
+				border-bottom: 1px solid #d6e4f1;
+				padding: 10px 20px;
+				color: #6b6c6f;
+				display: flex;
+				// padding-left: 50px;
+				font-size: 16px;
+				position: relative;
+				a {
+					color: $secondary-color;
+				}
+				.telephone,
+				.mailto,
+				input,
+				textarea {
+					flex: 1;
+					max-width: calc(100% - 75px) !important;
+					padding: 4px;
+					color: #6b6c6f;
+					border: none;
+					cursor: pointer;
+					font-size: 16px;
+					&.edit {
+						border: 1px solid #b9b9b9;
+						color: #6b6c6f;
+					}
+				}
+				.telephone {
+					padding: 0;
+					input {
+						height: 27px;
+						width: 100%;
+						max-width: none !important;
+					}
+				}
+				.mailto {
+					max-width: 100% !important;
+					textarea {
+						width: 100%;
+						max-width: none !important;
+					}
+				}
+				textarea {
+					overflow: hidden;
+					resize: none;
+				}
+				svg {
+					color: black;
+					opacity: 0.4;
+					font-size: 12px;
+					&.icon {
+						margin-right: 15px;
+						margin-top: 10px;
+					}
+					&.edit,
+					&.close,
+					&.check {
+						cursor: pointer;
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						&:hover {
+							opacity: 0.3;
+						}
+					}
+					&.edit {
+						right: 15px;
+					}
+					&.check {
+						right: 15px;
+						font-size: 18px;
+					}
+					&.close {
+						right: 40px;
+						font-size: 18px;
+					}
+					* {
+						pointer-events: none;
+					}
+				}
+				&.highlight {
+					color: $secondary-color;
+					cursor: pointer;
+					svg {
+						color: $secondary-color;
+						opacity: 0.5;
+					}
+				}
+			}
+		}
+	}
+}

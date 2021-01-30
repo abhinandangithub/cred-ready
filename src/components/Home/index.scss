@@ -1,0 +1,165 @@
+.home {
+	background-color: #f1f1f18a;
+	.scroll-wrapper {
+		background-color: #f8fafb;
+		min-height: calc(100vh - 70px);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		& > .content {
+			background-color: #f8fafb;
+			padding: 40px;
+			position: relative;
+		}
+	}
+	&.job_view_page {
+		.scroll-wrapper {
+			position: fixed;
+			overflow: hidden;
+			width: calc(100vw - 85px);
+			height: calc(100vh - 70px);
+			top: 70px;
+			transition: all 0.2s ease 0s;
+			left: 85px;
+			.content {
+				height: calc(100vh - 180px);
+				padding-bottom: 0;
+				.job-view-cmp {
+					margin-bottom: 0;
+					height: 100%;
+					.left,
+					.right {
+						height: 100%;
+					}
+					.left {
+						.bottom {
+							box-shadow: none;
+						}
+					}
+					.application_page {
+						.preview_info_job {
+							margin-bottom: 30px;
+							.content {
+								height: auto;
+								box-shadow: 0 1px 7px 0px rgba(176, 192, 237, 0.25);
+							}
+						}
+						.accordion {
+							.title {
+								box-shadow: 0 1px 7px 0px rgba(176, 192, 237, 0.25);
+							}
+							.content {
+								height: auto;
+							}
+							&:last-child {
+								margin-bottom: 0;
+							}
+						}
+					}
+					.meter {
+						box-shadow: 0 1px 7px 0px rgba(176, 192, 237, 0.25);
+					}
+					.marginal {
+						box-shadow: 0 1px 7px 0px rgba(176, 192, 237, 0.25);
+					}
+					.cta {
+						flex-direction: column;
+					}
+				}
+			}
+		}
+	}
+	&.open {
+		header {
+			.menu_outer {
+				width: 230px;
+			}
+		}
+		.navigation {
+			width: 230px;
+			ul {
+				li {
+					a {
+						img {
+							margin-bottom: 0;
+							& + span {
+								display: none;
+							}
+						}
+					}
+					ul {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.home {
+		.custom-scrollbar {
+			width: 100% !important;
+			left: 0 !important;
+		}
+		.scroll-wrapper {
+			& > .content {
+				padding: 20px 15px;
+			}
+		}
+		&.job_view_page {
+			.scroll-wrapper {
+				overflow: hidden !important;
+				height: auto !important;
+				position: relative !important;
+				width: 100% !important;
+				left: 0 !important;
+				.content {
+					height: auto;
+					.job-view-cmp {
+						margin-bottom: 30px;
+						.application_page {
+							margin-bottom: 0;
+						}
+						.meter {
+							margin-bottom: 30px;
+						}
+
+						.cta {
+							position: fixed;
+							width: 80%;
+							left: 50%;
+							transform: translateX(-50%);
+							bottom: 80px !important;
+						}
+					}
+				}
+			}
+		}
+		&.open {
+			header {
+				.menu_outer {
+					width: 85px;
+				}
+			}
+			.navigation {
+				width: 100%;
+				top: 70px;
+				transform: translateY(-0%);
+				transition: all 0.3s ease;
+				ul {
+					li {
+						a {
+							img {
+								margin-bottom: 0;
+								& + span {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

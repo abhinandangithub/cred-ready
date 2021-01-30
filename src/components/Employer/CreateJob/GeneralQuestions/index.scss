@@ -1,0 +1,14 @@
+@import "../../../../variables.scss";
+
+.general_questions_page {
+	margin-bottom: -40px;
+	.personality-assessment {
+		.fancy-toggle + label {
+			margin-right: 0;
+		}
+	}
+	.cta {
+		display: flex;
+		justify-content: flex-end;
+	}
+}

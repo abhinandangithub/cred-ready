@@ -1,0 +1,42 @@
+@import "../../../variables.scss";
+.jobs {
+	.applied-jobs {
+		margin-bottom: 40px;
+	}
+	.widget {
+		.top {
+			// height: 100px;
+			overflow: hidden;
+		}
+	}
+}
+.cred-details {
+	margin-top: 0px;
+	// margin-left: 20%;
+}
+
+@media screen and (max-width: 768px) {
+	.outlined {
+		padding: initial !important;
+		background-color: transparent !important;
+		border: 2px solid $secondary-color !important;
+		color: $secondary-color !important;
+		padding: 11px 45px;
+	}
+	.current-goals {
+		.common-main-heading {
+			justify-content: space-evenly !important;
+			h2 {
+				color: black;
+				cursor: pointer;
+				&:first-child {
+					margin-right: 20px;
+				}
+				&.active {
+					color: $secondary-color;
+					border-bottom: 1px solid $secondary-color;
+				}
+			}
+		}
+	}
+}

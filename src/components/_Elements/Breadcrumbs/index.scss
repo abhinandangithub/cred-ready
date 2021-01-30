@@ -1,0 +1,29 @@
+@import "../../../variables.scss";
+
+.breadcrumbs {
+	margin-bottom: 10px;
+	margin-top: -20px;
+	li {
+		display: inline-block;
+		a {
+			color: #737477;
+			font-size: 16px;
+			&.active {
+				color: $secondary-color;
+			}
+			&:after {
+				content: ">";
+				color: #737477;
+				margin: 0 10px;
+			}
+		}
+		&:last-child {
+			a {
+				color: $secondary-color;
+				&:after {
+					content: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+.cred-ready-index {
+	text-align: center;
+	color: black;
+	h3 {
+		margin: 0 0 15px 0;
+		font-weight: 500;
+	}
+	h4 {
+		margin: 0;
+		font-size: 26px;
+		font-weight: 400;
+	}
+	p {
+		margin: 0 0 20px 0;
+		font-size: 18px;
+	}
+	h4,
+	p {
+		padding-left: 10px;
+	}
+	svg {
+		max-width: 300px;
+		text {
+			font-size: 13px;
+			text-transform: initial;
+		}
+		.needle {
+			position: relative;
+			transform: rotateZ(0deg);
+			transform-origin: 51.953% 89.6%;
+			transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		}
+		.divider {
+			fill: none;
+			stroke: #a7a9ac;
+			stroke-miterlimit: 10;
+			stroke-width: 0.75px;
+			stroke-dasharray: 2.5;
+		}
+	}
+}
